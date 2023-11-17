@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head><script src="../assets/js/color-modes.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.111.3">
+    <title>Nutrinfo </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-2q7XgKo2SZ95HjaDlSv+L7Vu1MQwNlV8W4+4lDGCU5/F5z5+9r5JrP5ZMwIfQfIef3n1KNUvC8Bm+Ib/9U6OKQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="logoapp.jpg">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    
+
+    
+
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        width: 100%;
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .carousel-caption {
+      position: absolute;
+      right: 15%;
+      bottom: 1.25rem;
+      left: 15%;
+      padding-top: 1.25rem;
+      padding-bottom: 1.25rem;
+      color: #000;
+      text-align: center;
+      } 
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .btn-bd-primary {
+        --bd-violet-bg: #712cf9;
+        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+        --bs-btn-font-weight: 600;
+        --bs-btn-color: var(--bs-white);
+        --bs-btn-bg: var(--bd-violet-bg);
+        --bs-btn-border-color: var(--bd-violet-bg);
+        --bs-btn-hover-color: var(--bs-white);
+        --bs-btn-hover-bg: #6528e0;
+        --bs-btn-hover-border-color: #6528e0;
+        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+        --bs-btn-active-color: var(--bs-btn-hover-color);
+        --bs-btn-active-bg: #5a23c8;
+        --bs-btn-active-border-color: #5a23c8;
+      }
+      .bd-mode-toggle {
+        z-index: 1500;
+      }
+      
+      .container-fluid {
+    padding: 5px;
+    display: flex;
+    flex-wrap: inherit;
+    background-color: #2D2785;
+}
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+  </head>
+  <body>
+      
+    <header data-bs-theme="dark">
+        <nav class="navbar navbar-expand-md fixed-top">
+          <div class="container-fluid align-items-center">
+            <a class="navbar-brand" href="">
+              <img class="d-block mb-6" src="" alt="" width="100" height="50">
+            </a>
+          <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Menu
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="">Clientes</a>
+                  <a class="dropdown-item" href="">Privacidade</a>
+              </div>
+          </div>
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+               
+            </li>
+        </ul>
+            <form class="d-flex mx-auto" role="search">
+              <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search" style="width: 800px;">
+              <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+            </form>
+            <div class="d-flex align-items-center">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+      
+              <div class="d-flex align-items-center">
+      
+                  <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                      <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="">
+                              <img src="usuario_branco.png" alt="Ícone de Login" width="40" height="40" >
+                          </a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      
+        </nav>
+        
+      </header>
+
+<main class="px-3">
+  <h3>-Políticas</h3>
+  <p class="lead"></p>
+  <p class="lead">
+  </p>
+</main>
+<div>
+  <main class="px-3"> 
+    <h3>1-Termos e Condições de Uso:
+    </h3>
+    <p><font color="Black" face="arial" size="3">- Ao aceitar os termos, o usuário está de acordo que a Nutrinfo não tem quaisquer responsabilidade referente comunicação entre nutricionista e clientes, disponibilizamos os dados de contato, porém, ligações, emails e outras formas de contato serão feitas de maneira externa.</font></p>
+    <p><font color="Black" face="arial" size="3">- Ao aceitar os termos, o usuário declara que está de acordo no fornecimento de dados pessoais para cadastro na plataforma Nutrinfo.</font></p>
+
+    <p class="lead"></p>
+    <p class="lead">
+    </p>
+  </main>
+
+</div>
+
+<div>
+  <main class="px-3"> 
+    <h3>2--Cadastros:
+    </h3>
+    <p><font color="Black" face="arial" size="3">- Durante as etapas de cadastro alguns dados serão requeridos, em cada categoria de perfil, teremos solicitações semelhantes, porém, também contamos com algumas peculiaridades. Estes dados são armazenados e tratados, caso solicitados, as medidas serão tomadas conforme específicado no topico a seguir.</font></p>
+    <p class="lead"></p>
+    <p class="lead">
+    </p>
+  </main>
+
+</div>
+
+<div>
+  <main class="px-3"> 
+    <h3>3-Privacidade:
+    </h3>
+    <p><font color="Black" face="arial" size="3">- Todos os dados pessoais fornecidos durante os cadastros feitos em nossa plataforma, são mantidos em sigilo, os mesmos serão excluídos mediante a solicitação do usuário. Estas informações serão coletadas durante o cadastro de perfil e clientes.</font></p>
+    <p><font color="Black" face="arial" size="3">- Nossa plataforma opera de acordo com a <a href="https://www.stj.jus.br/sites/portalp/Leis-e-normas/lei-geral-de-protecao-de-dados-pessoais-lgpd" target="_blank">Lei Geral de Proteção de Dados Pessoais - LGPD (Lei nº 13.709/2018)</a>, a legislação brasileira que regula as atividades de tratamento de dados pessoais e que também altera os artigos 7º e 16 do Marco Civil da Internet.</font></p>
+    <p class="lead"></p>
+    <p class="lead">
+    </p>
+  </main>
+  
+
+</div>
+
+<div>
+<main class="px-3"> 
+  <h3>4-Regras de Conduta:
+  </h3>
+  <p><font color="Black" face="arial" size="3">- Esta plataforma é de uso exclusivo profissional,temas abordados dentro da plataforma, que, estejam ligados a outras situações, recomendamos que sejam evitados.</font></p>
+  <p><font color="Black" face="arial" size="3">- Esta plataforma é de uso exclusivo dos clientes que contrataram nossos serviços, caso seja identificado o uso através de outras personas, medidas serão tomadas conforme combinado via contrato.</font></p>
+  <p><font color="Black" face="arial" size="3">- É proibido qualquer espécie de de discriminação dentro da plataforma.</font></p>
+  <p class="lead"></p>
+  <p class="lead">
+  </p>
+</main>
+
+</div>
+<div>
+<main class="px-3"> 
+  <h3>5-Suporte ao Cliente:
+  </h3>
+  <p><font color="Black" face="arial" size="3">-Dúvidas e reclamações devem ser formalizadas através de nosso E-mail: apoio@nutrinfo.com.br . Onde o requerimento passará por uma avaliação de cenário e atendido de maneira sucinta e efetiva. </font></p>
+  <p class="lead"></p>
+  <p class="lead">
+  </p>
+</main>
+
+</div>
+
+<div>
+<main class="px-3"> 
+  <h3>6-Proteção Contra Spams:
+  </h3>
+  <p><font color="Black" face="arial" size="3">-Spams por e-mail não fazem parte do perfil da Nutrinfo, nossos E-mails serão enviados apenas em situações mediante a autorização do usuário.</font></p>
+  <p class="lead"></p>
+  <p class="lead">
+  </p>
+</main>
+
+</div>
+
+
+<footer class="my-5 pt-5 text-body-secondary text-center text-small">
+<p class="mb-1">&copy; 2023 Nutrinfo</p>
+<ul class="list-inline">
+  <li class="list-inline-item"><a href="../telaPrivacidade/privacidadeatt.html" style="color: #13dfb2 ;">Privacidade</a></li>
+  <li class="list-inline-item"><a href="../telaPrivacidade/privacidadeatt.html" style="color: #13dfb2 ;">Termos</a></li>
+  <li class="list-inline-item"><a href="../telaPrivacidade/privacidadeatt.html" style="color: #13dfb2 ;">Suporte</a></li>
+</ul>
+</footer>
+</div>
+</div>
+
+
+  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+</body>
+</html>
