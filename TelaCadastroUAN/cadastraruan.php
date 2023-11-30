@@ -11,8 +11,8 @@
     $dataCardapioUAN =$_POST['dataCardapioUAN'];
     $dataProtocoloUAN =$_POST['dataProtocoloUAN'];
 
-    $strcon = mysqli_connect("localhost","root","","NutriInfo") or die("Erro ao cadastrar");
-    $sql = "INSERT INTO UAN VALUES ('".$nomeFantasiaUAN."', '".$razaoSocialUAN."' , '".$CNPJUAN."', '".$telefoneUAN."' , '".$enderecoUAN."' , '".$bairroUAN."' , '".$cidadeUAN."' , '".$estadoUAN."' , '".$emailUAN."' , '".$dataCardapioUAN."' , '".$dataProtocoloUAN."');";
+    $strcon = mysqli_connect("localhost","root","","nutrinfo") or die("Erro ao cadastrar");
+    $sql = "INSERT INTO cadastrar_uan VALUES ('".$nomeFantasiaUAN."', '".$razaoSocialUAN."' , '".$CNPJUAN."', '".$telefoneUAN."' , '".$enderecoUAN."' , '".$bairroUAN."' , '".$cidadeUAN."' , '".$estadoUAN."' , '".$emailUAN."' , '".$dataCardapioUAN."' , '".$dataProtocoloUAN."');";
     mysqli_query($strcon, $sql) or die ("Erro ao tentar cadastrar registro");
     echo "Cliente cadastrado com sucesso";
 

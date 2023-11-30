@@ -7,8 +7,8 @@
     $CEP =$_POST['CEP'];
     $senha =$_POST['senha'];
 
-    $strcon = mysqli_connect("localhost","root","","NutriInfo") or die("Erro ao cadastrar");
-    $sql = "INSERT INTO Usuario VALUES ('".$nome."', '".$sobrenome."' , '".$endereco."', '".$pais."' , '".$estado."' , '".$CEP."' , '".$senha."');";
+    $strcon = mysqli_connect("localhost","root","","nutrinfo") or die("Erro ao cadastrar");
+    $sql = "INSERT INTO cliente_nutri VALUES ('".$nome."', '".$sobrenome."' , '".$endereco."', '".$pais."' , '".$estado."' , '".$CEP."' , '".$senha."');";
     mysqli_query($strcon, $sql) or die ("Erro ao tentar cadastrar registro");
     echo "Cliente cadastrado com sucesso";
 
