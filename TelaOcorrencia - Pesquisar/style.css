@@ -123,8 +123,8 @@ header{
   }
   
   .form-check-input:checked {
-    background-color: #2d2785;
-    border-color: #2d2785;
+    background-color: #13dfb2;
+    border-color: #13dfb2;
   }
   
   :root, [data-bs-theme=light] {
@@ -269,8 +269,8 @@ header{
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-    color: black;
-    background-color: #ffffff;
+    color: #ffffff;
+    background-color: #13dfb2;
     background-clip: padding-box;
     border: var(--bs-border-width) solid var(--bs-border-color);
     -webkit-appearance: none;
