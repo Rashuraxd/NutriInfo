@@ -83,6 +83,11 @@ body {
   --bs-gradient: none;
 }
 
+.bg-body-tertiary {
+  --bs-bg-opacity: 0;
+  background-color: rgba(var(--bs-tertiary-bg-rgb),var(--bs-bg-opacity))!important;
+}
+
 .text-bg-primary {
   color: #fff!important;
   background-color: RGBA(45,39,133,var(--bs-bg-opacity,1))!important;

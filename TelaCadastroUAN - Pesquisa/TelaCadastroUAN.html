@@ -89,14 +89,14 @@
 
             <div class="col-sm-6">
               <label for="lastName" class="form-label">CNPJ</label><span class="text-body-secondary">*</span></label>
-              <input type="text" class="form-control" name="CNPJUAN" id="lastName" placeholder="" value="" required>
+              <input type="text" class="form-control" name="CNPJUAN" id="lastName" placeholder="00.000.000/00000-00" value="" required>
               <div class="invalid-feedback">
                 Inserir CNPJ.
               </div>
             </div>
             <div class="col-sm-6">
               <label for="lastName" class="form-label">Telefone<span class="text-body-secondary">*</span></label>
-              <input type="text" class="form-control" name="telefoneUAN" id="lastName" placeholder="" value="" required>
+              <input type="text" class="form-control" name="telefoneUAN" id="lastName" placeholder="(XX) 99999-9999" value="" required>
               <div class="invalid-feedback">
                 Inserir telefone.
               </div>
@@ -118,24 +118,38 @@
               </div>
             </div>
 
-            <div class="col-sm-6">
-              <label for="lastName" class="form-label">Cidade</label><span class="text-body-secondary">*</span></label>
-              <input type="text" class="form-control" name="cidadeUAN" id="lastName" placeholder="" value="" required>
+            <div class="col-md-6">
+              <label for="state" class="form-label"  >Estado</label>
+              <select class="form-select" name="estado" id="state" required>
+                <option value="">Selecionar</option>
+                <option>São Paulo</option>
+                
+
+              </select>
               <div class="invalid-feedback">
-                Inserir cidade.
+                Please provide a valid state.
               </div>
             </div>
-            <div class="col-sm-6">
-              <label for="lastName" class="form-label">Estado<span class="text-body-secondary">*</span></label>
-              <input type="text" class="form-control" name="estadoUAN" id="lastName" placeholder="" value="" required>
+            
+            <div class="col-md-6">
+              <label for="state" class="form-label"  >Cidade</label>
+              <select class="form-select" name="estado" id="state" required>
+                <option value="">Selecionar</option>
+                <option>São Paulo</option>
+                <option>Sorocaba</option>
+                <option>Barueri</option>
+                <option>Piratininga</option>
+                
+
+              </select>
               <div class="invalid-feedback">
-                Inserir estado.
+                Please provide a valid state.
               </div>
             </div>
 
             <div class="col-12">
               <label for="address" class="form-label">E-mail<span class="text-body-secondary">*</span></label>
-              <input type="text" class="form-control" name="emailUAN" id="address" placeholder="" required>
+              <input type="text" class="form-control" name="emailUAN" id="address" placeholder="email@.com.br" required>
               <div class="invalid-feedback">
                 Inserir e-mail.
               </div>
@@ -150,7 +164,7 @@
         <input type="file">
         <div class="col-sm-6">
           <label for="lastName" class="form-label">Data</label></label>
-          <input type="text" class="form-control" name="dataCardapioUAN" id="lastName" placeholder="" value="">
+          <input type="text" class="form-control" name="dataCardapioUAN" id="lastName" placeholder="02/12/2023" value="">
         </div>
       </div>
       <div>
@@ -158,7 +172,7 @@
         <input type="file">
         <div class="col-sm-6">
           <label for="lastName" class="form-label">Data</label></label>
-          <input type="text" class="form-control" name="dataProtocoloUAN" id="lastName" placeholder="" value="">
+          <input type="text" class="form-control" name="dataProtocoloUAN" id="lastName" placeholder="02/12/2023" value="">
         </div>
       </div>
         <a href="../UANCadastradas/UANCadastradas.html">

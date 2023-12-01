@@ -41,7 +41,7 @@
             </li>
         </ul>
             <form class="d-flex mx-auto" role="search">
-              <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search" style="width: 800px;">
+              <input class="form-control2 me-2" type="search" placeholder="Pesquisar" aria-label="Search" style="width: 800px;">
               <button class="btn btn-outline-success" type="submit">Pesquisar</button>
             </form>
             <div class="d-flex align-items-center">
@@ -68,14 +68,19 @@
   <main>
     <div class="conteudo">
       <form>
-      <div>
-        <h4 class="mb-3">Cardapio</h4>
-        <input type="file">
-        <div class="col-sm-6">
-      </div>
+        <div>
+          <h4 class="mb-3">Cardapio</h4>
+          <input type="file">
+          <div class="col-sm-6">
+            <label for="lastName" class="form-label">Expira em:</label>
+            <input type="text" class="form-control" name="dataCardapioUAN" id="lastName" placeholder="02/12/2023" value="">
+          </div>
+        </div>
         <a href="../TelaCardapio/TelaCardapio.html">
         <button type="button" class="btn btn-primary btn-lg " name = "enviar">Confirmar</button>
         </a>
+      </form>
+        </div>
       </form>
     </div>
     
